@@ -36,7 +36,7 @@ export function TaskList() {
     let taskfilter = aux.find(task => task.id === id)
 
     if (taskfilter) {
-      taskfilter.isComplete = true;
+      taskfilter.isComplete = !taskfilter.isComplete;
     }
 
     setTasks(aux)
